@@ -38,7 +38,7 @@ class Warrior(Character):
             print(f"{opponent.name} has been defeated!")
 
     def shield_block(self):
-        self.health += 10
+        self.health += 
         print(f"{self.name} uses Shield Block and gains 10 health! Current health: {self.health}")
 
 
@@ -52,9 +52,9 @@ class Mage(Character):
         print(f"{self.name} casts a spell on {opponent.name} for {random_damage} damage!")
         if opponent.health <= 0:
             print(f"{opponent.name} has been defeated!")
-    def mana_shield(self):
+    def magicShield(self):
         self.health += 5
-        print(f"{self.name} uses Mana Shield and gains 5 health! Current health: {self.health}")
+        print(f"{self.name} uses MagicShield and gains 5 health! Current health: {self.health}")
 
 
 
@@ -188,5 +188,3 @@ def main():
     # Start the battle
     battle(player, wizard)
 
-if __name__ == "__main__":
-    main()
